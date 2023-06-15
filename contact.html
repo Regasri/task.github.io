@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Best  Business Consultancy service | JoinHands.com</title>
+	<link rel="stylesheet"  href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="contact">
+		<nav id="navbar">
+			<div id="logo">
+				<img src="img/logo.png" alt="JoinHands.com">
+			</div>
+			<ul>
+				 <li class="item"><a href="index.html">Home</a></li>
+				 <li class="item"><a href="aboutus.html">About Us</a></li>
+				 <li class="item"><a href="service.html">Our Services</a></li>
+				 <li class="item"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h1 >Contact Us</h1>
+     
+    </section>
+    <section class="contact-us">
+    	<div class="row">
+    		<div class="contact-col">
+    			<div>
+    				<i class="ri-home-line"></i>
+    				<span>
+    					<h5>XYZ Road,ABC Building</h5>
+    					<p>Hyderabad,Andhra Pradesh , India</p>
+    				</span>
+    			</div>
+    			<div>
+    				<i class="ri-phone-fill"></i>
+    				<span>
+    					<h5>+91 0123456789</h5>
+    					<p>Monday to Saturday,10AM to 6PM</p>
+    				</span>
+    			</div>
+    			<div>
+    				<i class="ri-mail-line"></i>
+    				<span>
+    					<h5>XYZ@joinhands.com</h5>
+    					<p>Email us your query</p>
+    				</span>
+    			</div>
+    			
+    		</div>
+    		<div class="contact-col">
+    			<form action="http://formz.in/api/task" method="POST" enctype="form urlencoded" class="form">
+    				Name
+    				<input type="text" name="name" placeholder="Enter Your name" required>
+    				Email
+    				<input type="email" name="email" placeholder="Enter Email Address" required>
+    				Phone Number
+    				<input type="tel"  name="phone"placeholder="+91-0000000000 "required>
+    				How can we help?
+    				<textarea rows="8" name="description"placeholder="Message"required></textarea>
+    				Services<br><br><br>
+    				Strategy & Consultation<input type="checkbox" name="service" value="Strategy" value="Strategy & Consultation"> 
+    				Marketing<input type="checkbox" name="service" value="marketing">  
+    				Content Creation <input type="checkbox" name="service" value="creation"> 
+    			    Other<input type="checkbox" name="service" value="other"> 
+    			    
+    				
+    				<button type="submit"
+    				class="hero-btn brown-btn" onclick="form()">Send Message</button>
+    			</form>
+    		</div>
+
+    		
+    	</div>
+        <script>
+            function form() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        alert("Your form has been successfully submitted");
+                    }
+                };
+                xhttp.open("POST", "http://formz.in/api/task", true);
+                xhttp.send();﻿ 
+            }﻿ 
+        </script>
+    	
+    	
+    </section>
+	<!----footer--->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do ore eu fugiat nulla pariatur. </p>
+		<div class="icons">
+			<i class="ri-facebook-line"></i>
+			<i class="ri-instagram-line"></i>
+			<i class="ri-twitter-line"></i>
+			<i class="ri-linkedin-line"></i>
+		</div>
+		
+	</section>
+	<footer>
+        <div class="center">
+            Copyright &copy; www.JoinHands.com. All rights reserved!
+        </div>
+    </footer>
+	
+
+	
+
+
+</body>
+</html>
